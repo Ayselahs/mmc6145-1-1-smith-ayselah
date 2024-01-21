@@ -1,0 +1,37 @@
+.about_container {
+    grid-template-columns: 3fr 9fr;
+    column-gap: 1.875rem;
+}
+
+.about_info {
+    padding: 1.875rem;
+}
+
+.edu_card {
+    box-shadow: -3px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin: 8px auto;
+    height: 20rem;
+    width: 30rem;
+    background-color: aliceblue;
+}
+
+.edu_uni {
+    margin: 0;
+    color: aquamarine;
+    font-size: 1.2em;
+}
+
+.edu_degree {
+    margin: 4px 0;
+    font-style: italic;
+}
+
+.edu_year {
+    margin: 4px 0;
+    color: beige;
+}
+
+.edu_descript {
+    margin: 4px 0;
+}

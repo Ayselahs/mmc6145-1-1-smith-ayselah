@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #0a192f;
+}
+
+.content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.introText {
+  color: #D70060
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  flex-basis: 100%;
+}
+
+.projectCard {
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.cardImage img {
+  width: 100%;
+  height: auto;
+}
+
+.customBtn {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: aqua;
+  color: wheat;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cardText {
+  padding: 15px;
+}
+
+.cardText span,
+.cardText p {
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 600px) {
+  .cardContainer {
+    flex-basis: 50%;
+  }
+}
