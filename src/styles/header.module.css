@@ -1,0 +1,45 @@
+body {
+    height: 100%
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #22345C;
+    color: aliceblue;
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.logo {
+    line-height: 0;
+    font-size: 28px;
+    max-height: 40px;
+    flex-shrink: 0;
+    margin: 0 20px;
+}
+
+.nav {
+    display: flex;
+}
+
+.navLink {
+    padding: 10px 0;
+    padding-left: 15px;
+    font-size: 22px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footerP {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .navLink {
+        font-size: 18px;
+    }
+}

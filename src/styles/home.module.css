@@ -1,7 +1,42 @@
-.container {
+body {
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
+.mainContainer {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background-color: #0a192f;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-color: #0a192f;
+}
+
+.customBG {
+  background-color: #0a192f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.customBG svg {
+
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.shapeFill {
+  fill: #f8f8f8;
 }
 
 .content {
@@ -16,17 +51,39 @@
   height: 100%;
 }
 
-.introText {
-  color: #D70060
+.h1Text {
+  font-size: 3.5rem;
+  margin: 5px;
+  color: #ccd6f6;
+}
+
+.h2Text {
+  font-size: 2.5rem;
+  margin: 5px;
+  color: #8892b0;
+}
+
+.pText {
+  color: #8892b0;
+  padding-top: 25px;
+  max-width: 700px;
+}
+
+.projText {
+  font-size: 4rem;
+  margin: 5px;
+  color: #8892b0;
+  text-align: center;
 }
 
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  width: 50%;
+  max-width: 300px;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
   flex-basis: 100%;
 }
 
@@ -38,6 +95,7 @@
 
 .cardImage {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   position: relative;
@@ -54,11 +112,12 @@
   bottom: 15px;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: aqua;
+  background-color: #22345C;
   color: wheat;
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .cardText {

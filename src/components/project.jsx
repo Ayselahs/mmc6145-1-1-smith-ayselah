@@ -8,7 +8,7 @@ export default function Project({ title, descript, img, link }) {
             <div className={styles.projectCard}>
                 <div className={styles.cardImage}>
                     <img src={img} />
-                    <Link to={link} className={styles.customBtn}>{link}</Link>
+                    <Link to={link} className={styles.customBtn}>→</Link>
                 </div>
                 <div className={styles.cardText}>
                     <span>{title}</span>
